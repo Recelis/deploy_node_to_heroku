@@ -8,6 +8,6 @@ app.listen(process.envPORT|| 3000, ()=>{
     console.log("All is ok");
 })
 
-app.get('/newpage', ()=>{
+app.get('/newpage', (req,res)=>{
     res.send("this is a new page");
 })
